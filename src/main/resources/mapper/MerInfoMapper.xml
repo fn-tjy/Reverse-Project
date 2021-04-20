@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="tao.xxx.mapper.MerInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="tao.xxx.pojo.MerInfo">
+        <id column="LOG_NO" property="logNo" />
+        <result column="MER_ID" property="merId" />
+        <result column="MER_NAME" property="merName" />
+        <result column="AGT_ID" property="agtId" />
+        <result column="MER_STATUS" property="merStatus" />
+        <result column="MER_REASON" property="merReason" />
+        <result column="ONE_AGT_ID" property="oneAgtId" />
+        <result column="ONE_ORI_AGT_ID" property="oneOriAgtId" />
+        <result column="SERVICE_NO" property="serviceNo" />
+        <result column="MER_EMAIL" property="merEmail" />
+        <result column="MER_TYPE" property="merType" />
+        <result column="BIZ_SCOPE" property="bizScope" />
+        <result column="MER_PROV" property="merProv" />
+        <result column="MER_CITY" property="merCity" />
+        <result column="MER_AREA" property="merArea" />
+        <result column="MER_ADDR" property="merAddr" />
+        <result column="MER_POST" property="merPost" />
+        <result column="MER_FAX" property="merFax" />
+        <result column="MER_PHONE" property="merPhone" />
+        <result column="MER_MOBILE" property="merMobile" />
+        <result column="MER_MCC_CODE" property="merMccCode" />
+        <result column="REG_FUND" property="regFund" />
+        <result column="IS_MERGE" property="isMerge" />
+        <result column="BIZ_LIC" property="bizLic" />
+        <result column="ORG_COD" property="orgCod" />
+        <result column="TAX_NO" property="taxNo" />
+        <result column="MER_AP" property="merAp" />
+        <result column="AP_ID" property="apId" />
+        <result column="ID_TYPE" property="idType" />
+        <result column="ID_EFF_DAT" property="idEffDat" />
+        <result column="ID_EXP_DAT" property="idExpDat" />
+        <result column="STL_TYPE" property="stlType" />
+        <result column="JJK_RATE" property="jjkRate" />
+        <result column="JJK_CAP" property="jjkCap" />
+        <result column="DJK_RATE" property="djkRate" />
+        <result column="D0_RATE" property="d0Rate" />
+        <result column="SETTLE_ACCOUNT_TYPE" property="settleAccountType" />
+        <result column="STL_NAME" property="stlName" />
+        <result column="STL_AC" property="stlAc" />
+        <result column="STL_PROV" property="stlProv" />
+        <result column="STL_CITY" property="stlCity" />
+        <result column="STL_BNK" property="stlBnk" />
+        <result column="STL_BNK_NAME" property="stlBnkName" />
+        <result column="STL_CNAPS" property="stlCnaps" />
+        <result column="STL_CNAPS_NAME" property="stlCnapsName" />
+        <result column="ATTA_1" property="atta1" />
+        <result column="ATTA_2" property="atta2" />
+        <result column="ATTA_3" property="atta3" />
+        <result column="ATTA_4" property="atta4" />
+        <result column="UPD_USR" property="updUsr" />
+        <result column="BACKUP_FIELD" property="backupField" />
+        <result column="UPD_TIM" property="updTim" />
+        <result column="agt_pro" property="agtPro" />
+        <result column="LICENSE_START_DATE" property="licenseStartDate" />
+        <result column="LICENSE_END_DATE" property="licenseEndDate" />
+        <result column="PLAT_TYPE" property="platType" />
+        <result column="WXPAY_FEE" property="wxpayFee" />
+        <result column="ALIPAY_FEE" property="alipayFee" />
+        <result column="FOUR_AUTH_STS" property="fourAuthSts" />
+        <result column="JRN_NO" property="jrnNo" />
+        <result column="UP_SMALL_STATUS" property="upSmallStatus" />
+        <result column="UP_STANDARD_STATUS" property="upStandardStatus" />
+        <result column="BIND_STS" property="bindSts" />
+        <result column="agt_brand" property="agtBrand" />
+        <result column="ACTIVATION_CODE" property="activationCode" />
+        <result column="LKL_WL" property="lklWl" />
+        <result column="JJK_YH" property="jjkYh" />
+        <result column="DJK_YH" property="djkYh" />
+        <result column="NET_IN_TIM" property="netInTim" />
+        <result column="QUIC_FEE" property="quicFee" />
+        <result column="UNI_FEE" property="uniFee" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        LOG_NO, MER_ID, MER_NAME, AGT_ID, MER_STATUS, MER_REASON, ONE_AGT_ID, ONE_ORI_AGT_ID, SERVICE_NO, MER_EMAIL, MER_TYPE, BIZ_SCOPE, MER_PROV, MER_CITY, MER_AREA, MER_ADDR, MER_POST, MER_FAX, MER_PHONE, MER_MOBILE, MER_MCC_CODE, REG_FUND, IS_MERGE, BIZ_LIC, ORG_COD, TAX_NO, MER_AP, AP_ID, ID_TYPE, ID_EFF_DAT, ID_EXP_DAT, STL_TYPE, JJK_RATE, JJK_CAP, DJK_RATE, D0_RATE, SETTLE_ACCOUNT_TYPE, STL_NAME, STL_AC, STL_PROV, STL_CITY, STL_BNK, STL_BNK_NAME, STL_CNAPS, STL_CNAPS_NAME, ATTA_1, ATTA_2, ATTA_3, ATTA_4, UPD_USR, BACKUP_FIELD, UPD_TIM, agt_pro, LICENSE_START_DATE, LICENSE_END_DATE, PLAT_TYPE, WXPAY_FEE, ALIPAY_FEE, FOUR_AUTH_STS, JRN_NO, UP_SMALL_STATUS, UP_STANDARD_STATUS, BIND_STS, agt_brand, ACTIVATION_CODE, LKL_WL, JJK_YH, DJK_YH, NET_IN_TIM, QUIC_FEE, UNI_FEE
+    </sql>
+
+</mapper>
